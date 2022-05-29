@@ -1,0 +1,187 @@
+#main-content {
+  background-color: var(--color-yellow-light);
+  color: black;
+  border-radius: 10px;
+  padding: 15px;
+  overflow: hidden;
+
+  .gallery-title {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .text-block {
+    margin: 10px 0px;
+  }
+
+  .indented-link {
+    margin: 20px 0px 20px 30px;
+    font-style: italic;
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .list-image-collection {
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+    .gallerybox {
+      font-size: calc(1em * 0.875);
+      line-height: 1.6;
+      margin: 5px;
+      text-align: center;
+      text-decoration: none;
+    }
+    .gallerybox > a {
+      transition-duration: 0.25s;
+      display: block;
+      text-decoration: none;
+      padding: 8px;
+      &:hover {
+        transform: scale(0.95);
+      }
+      p {
+        margin-top: -15px;
+        font-size: 0.85em;
+        border: 1px solid black;
+        border-radius: 0px 0px 5px 5px;
+        background-image: url(./img/heading_marble_faded.png);
+        color: black;
+        padding: 10px;
+        padding-top: 13px;
+      }
+    }
+
+    .gallerybox > a > img {
+      width: 100%;
+      padding-bottom: 0px;
+      border-radius: 5px 5px 0px 0px;
+      border: 1px solid black;
+    }
+  }
+
+  .quote {
+    padding: 1em 40px;
+    overflow: hidden;
+  }
+
+  .thumb-right {
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 20px;
+  }
+  .thumb-left {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .image-collection {
+    list-style-type: none;
+
+    border-radius: 10px;
+    padding-top: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    line-height: 0;
+    column-count: 4;
+    column-gap: 25px;
+    row-gap: 25px;
+    text-decoration: none;
+    padding-bottom: -25px;
+
+    .content-card {
+      margin-bottom: 25px;
+      text-decoration: none;
+      transition-duration: 0.25s;
+      color: var(--color-bg-night);
+      background-color: rgb(136, 98, 98);
+      border-radius: 10px;
+      border: 1px solid var(--color-bg-night);
+      padding: 8px;
+      display: inline-block;
+      line-height: normal;
+
+      img {
+        width: 100%;
+        border: 1px solid var(--color-bg-night);
+        border-radius: 10px;
+        margin-bottom: 5px;
+      }
+      p {
+        color: var(--color-yellow-light);
+        color: white;
+        font-size: 0.8em;
+        text-align: center;
+      }
+
+      &:hover {
+        transform: scale(0.95);
+      }
+    }
+  }
+
+  .chapter-title {
+    font-size: 2em;
+    margin-top: 50px;
+  }
+  hr {
+    margin-bottom: 20px;
+  }
+  ol {
+    margin-left: 40px;
+    padding: 5px;
+  }
+
+  .chapter-undertitle {
+    font-size: 1.5em;
+    margin-bottom: 05px;
+    margin-top: 30px;
+  }
+
+  .content-image {
+    display: inline-block;
+    transition-duration: 0.25s;
+    text-decoration: none;
+
+    img {
+      border-radius: 5px 5px 0px 0px;
+      border: 1px solid var(--color-bg-night);
+    }
+    p {
+      color: black;
+      text-align: center;
+      padding: 15px 10px 10px 10px;
+      width: 0;
+      margin-top: -15px;
+      background-image: url(./img/heading_marble_faded.png);
+      min-width: 100%;
+      border: 1px solid black;
+      border-radius: 0px 0px 5px 5px;
+      font-size: 0.85em;
+    }
+
+    &:hover {
+      transform: scale(0.95);
+    }
+  }
+}
+
+.main-title {
+  font-family: titleFont;
+  padding-top: 8px;
+  padding-bottom: 5px;
+  display: block;
+  font-size: 2.5em;
+  color: var(--color-bg-night);
+  padding-left: 10px;
+  background-image: url("img/heading_marble_faded.png");
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--color-bg-night);
+  border-right: 1px solid var(--color-bg-night);
+  border-left: 1px solid var(--color-bg-night);
+}

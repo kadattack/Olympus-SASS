@@ -1,0 +1,49 @@
+main {
+  grid-area: main;
+  background: var(--color-main);
+  padding: 15px;
+  padding-right: 30px;
+}
+
+.content-cell {
+  background-color: var(--color-yellow-light);
+  border-radius: 6px;
+  padding: 15px;
+}
+
+.text-block {
+  margin: 10px 0;
+}
+
+.chapter-undertitle {
+  font-size: 1.5em;
+  margin-bottom: 05px;
+  margin-top: 30px;
+}
+
+.main-text-title {
+  font-size: 3em;
+  text-decoration: none solid;
+  padding-left: 10px;
+  background-image: url("img/heading_marble_faded.png");
+  border: 1px solid var(--color-bg-night);
+  margin-bottom: 10px;
+  border-radius: 6px;
+  font-family: titleFont;
+}
+
+.main-images {
+  overflow: hidden;
+  float: right;
+  margin: 15px 10px 15px 20px;
+}
+
+.main-images > img {
+  border: 1px solid var(--color-bg-night);
+
+  border-radius: 6px;
+  width: 500px;
+}
+
+@media (max-width: 1140px) {
+}

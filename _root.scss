@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  /* box-sizing prevents padding from makin box bigger but stuffs the content inside */
+  padding: 0;
+  margin: 0;
+  font-size: 23px;
+  font-family: "Lusitana", serif;
+}
+
+@font-face {
+  font-family: "titleFont";
+  src: URL("./Font/SigismundoDiFanti.ttf") format("truetype");
+}
+
+/* font-family: 'Adamina', serif;
+  font-family: 'Alegreya', serif;
+  font-family: 'Lusitana', serif;
+  font-family: 'Mada', sans-serif;
+  font-family: 'Maven Pro', sans-serif;
+  font-family: 'Ruda', sans-serif;
+  font-family: 'Sanchez', serif; */
+
+:root {
+  --menu-texture: url("img/rhodes_greece_island_stone_the_inscription_greek_language_greek_history-498280.jpg")
+    no-repeat center center/cover;
+  --texture-opacity: 0.2;
+  --color-main: #6d3d43;
+  --color-main-dark: rgb(221, 196, 140);
+  --color-dark: #675469;
+  --color-main-light: #675469;
+  --color-dark-medium: #51546e;
+  --color-dark-light: #696d97;
+  --color-light: #e5e5e5;
+  --color-menu: #f5e0b2;
+  --color-yellow-light: #e4d1bf;
+  --color-menu-select: #5f303e;
+
+  --color-light-gray: #b2bdbd;
+  --color-bg-day: #e9e3d7;
+  --color-bg-night: #2d2d39;
+  --color-success: #5dd693;
+  --color-error: #fc4b0b;
+  --button-box-shadows: #cbcfce;
+  --button-box-pressed-shadows: #929b9c;
+}
+
+@mixin center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: var(--color-main);
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-areas:
+    "header header header"
+    "image image image"
+    "leftnav main summary"
+    "footer footer footer";
+}
+
+main {
+  grid-area: main;
+  background: var(--color-main);
+  padding: 15px;
+  padding-right: 15px;
+}
+
+@media (max-width: 1140px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "image"
+      "main"
+      "footer";
+  }
+}
